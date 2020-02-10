@@ -7,6 +7,50 @@
 <body>
 	<h1>Assignment 2</h1>
 	<h2>Employee List</h2>
+	 <section id="table-section" class="main-section">
+		 			<h2>HTML Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>E-Mail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>john@fakemail.com</td>
+                        </tr>
+                        <tr>
+                            <td >2</td>
+                            <td>Sam</td>
+                            <td>sam@fakemail.com</td>
+                        </tr>
+                         <tr>
+                            <td>1</td>
+                            <td>Bob</td>
+                            <td>bob@fakemail.com</td>
+                        </tr>
+                         <tr>
+                            <td>1</td>
+                            <td>Jack</td>
+                            <td>jack@fakemail.com</td>
+                        </tr>
+                         <tr>
+                            <td>1</td>
+                            <td>Rob</td>
+                            <td>rob@fakemail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4"> All of the above are Division Heads </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
 	<main>
 		<section>
 			<article>
@@ -31,22 +75,41 @@
 		<section>
 			<article>
 				<h2>HTML Entities</h2>
-				<p>Non Breaking Space:</p>
-				<p>Ampersand: </p>
-				<p>Pound: </p>
-				<p>Copyright</p>
+				<p>Non Breaking Space: &#160;</p>
+				<p>Ampersand: &#38;</p>
+				<p>Pound: &#163;</p>
+				<p>Copyright: &#169;</p>
 			</article>
 		</section>
 		<section>
 			<article>
 				<h2>Special Tags:</h2>
-				<p>Coffee</p>
-				<p>Milk </p>
-				<p>HTML </p>
-				<p>CSS</p>
+				<dl>
+					<dt>Coffee</dt>
+						<dd>- Dirty Bean Juice of Life</dd>
+					<dt>Milk</dt>
+						<dd>- It can be vegan if you want it to</dd>
+				</dl>
+			</article>
+			<article id="st-abbr" class="special-tag">
+				<abbr  title="Hypertext Markup Language">HTML</abbr >
+			</article>
+			<article>
+				<abbr  title="Cascading Style Sheets">CSS</abbr >
 			</article>
 		</section>
-
+		<section>
+			<article class="special-tag" id="details">
+					<details> 
+				       <summary>What is a Mobile Phone?</summary>
+				       <p>A Mobile Phone, cell phone or hand phone (Sometimes shortened to simply mobile, cell or phone), is a portable telephone that can make and recieve calls over a radio frequency link while the user is moving within a telephone service area.</p>
+					</details>
+				</article>
+		</section>
+		<section>
+			<h2>Hidden Comment:</h2>
+				<!--Praise our Dark Lord Cthulhu-->
+		</section>
 	</main>
 </body>
 </html>
