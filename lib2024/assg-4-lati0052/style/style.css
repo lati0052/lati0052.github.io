@@ -50,7 +50,6 @@ table {
 h1,h2,h3,h4,h5{
 	font-family: 'Source Sans pro', sans-serif;
 }
-/*CSS clearfix*/
 
 .clearfix:after {
 	content: "";
@@ -58,28 +57,9 @@ h1,h2,h3,h4,h5{
 	clear: both;
 }
 
-/*
-	Color Pallete
-
-	Primary Blue : #1976D2;
-	Light blue : #BBDEFB;
-	Primary Text : #212121;
-	Gray : #757575;
-	Orange : #FF5722;
-	Red : #F44336;
-	Yellow : #FFEB3B;
-*/
-
-/************************
-		MOBILE FIRST
-************************/
-
-/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
 .col-main, .col-footer, img {
 	width:100%;
 }
-
-/* Header styles */ 
 header {
 	background: #7cc576;
 	padding: 20px
@@ -103,18 +83,8 @@ a:link, a:visited {
 }
 a:hover, a:active {
 	background-color: #00b8bb
-.title {
+title {
 	padding-top: 10px;
-}
-
-.logo {
-	float: left;
-	width:100px;
-	padding: 5px;
-	box-sizing: border-box;
-	background: #7cc576;
-
-	/*box-sizing border box makes the width adjust according to padding*/
 }
 .desktop-nav {
 	float: none;
@@ -169,12 +139,10 @@ a:hover, a:active {
 /*footer styles*/
 footer {
 	background: #7cc576;
-	padding: 35px;
-	width: 100%;
-	box-sizing: border-box;
-}
+	padding: 20px
+	text-align: center;
 
-.social-media {
+social-media {
 	background: #7cc576;
 }
 
@@ -220,23 +188,9 @@ footer {
 
 	.image-gallery .img-slide {
 		width: 33%;
-		padding: 40px;
+		padding: 10px;
 		box-sizing: border-box;
 		float: left;
-	}
-
-	.col-footer {
-		
-		width: 15%;
-		box-sizing: border-box;
-		margin: 0 1%;
-		padding: 0px;
-		float: right;
-	}
-	footer {
-		background-color: #7cc576;
-		text-align: center;
-		padding: 10px
 	}
 
 @media only screen and (max-width: 768px) {	
