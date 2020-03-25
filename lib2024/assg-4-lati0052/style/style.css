@@ -1,0 +1,253 @@
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	vertical-align: baseline;
+	max-width: 960px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-image: url(pictures/back.jpg);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Source Sans pro', sans-serif;
+}
+/*CSS clearfix*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*
+	Color Pallete
+
+	Primary Blue : #1976D2;
+	Light blue : #BBDEFB;
+	Primary Text : #212121;
+	Gray : #757575;
+	Orange : #FF5722;
+	Red : #F44336;
+	Yellow : #FFEB3B;
+*/
+
+/************************
+		MOBILE FIRST
+************************/
+
+/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
+.col-main, .col-footer, img {
+	width:100%;
+}
+
+/* Header styles */ 
+header {
+	background: #7cc576;
+	padding: 20px
+	text-align: center;
+}
+header h1 {
+	margin: 0
+}
+html, body{
+	margin: 0;
+	padding: 0;
+}
+a:link, a:visited {
+	background-color: #6dcff6;
+	color: black;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+a:hover, a:active {
+	background-color: #00b8bb
+.title {
+	padding-top: 10px;
+}
+
+.logo {
+	float: left;
+	width:100px;
+	padding: 15px;
+	box-sizing: border-box;
+	background: #7cc576;
+
+	/*box-sizing border box makes the width adjust according to padding*/
+}
+.desktop-nav {
+	float: none;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	/*max width is used in fluid layout to restrict the width of elements that are set to 100% width*/
+	/*This is to make sure the content remains in the readable area for screen sizes that are larger than a tablet*/
+	clear: both;
+}
+
+
+.main-nav a {
+	float:none;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px;
+	clear: both;
+}
+
+.mobile-nav {
+	display: flex;
+	justify-content: space-between;
+	width:100%;
+	clear: both;
+}
+
+.mobile-nav-container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	clear: both;
+}
+
+
+/*main content styles*/
+.site-sidebar {
+	padding: 15px;
+	width: 30%;
+	box-sizing: border-box;
+}
+
+.site-content {
+	padding: 15px;
+	width:70%;
+	box-sizing: border-box;
+}
+
+
+/*footer styles*/
+footer {
+	background: #7cc576;
+	padding: 35px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.social-media {
+	background: #7cc576;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	header {
+		background: #7cc576;
+	}
+}
+@media only screen and (min-width: 768px) {
+
+	header, main, footer {
+
+		max-width: 960px;
+		margin: 0 auto;
+
+	}
+
+	.desktop-nav {
+	float: none;
+	width: calc(100% - 100px);
+	display: flex;
+	justify-content: space-between;
+	padding-left: 40px;
+	padding-right: 40px;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.site-content {
+		float: left;
+		width: 70%;
+		box-sizing: border-box;
+	}
+
+	.site-sidebar {
+		float: left;
+		width: 30%;
+		box-sizing: border-box;
+	}
+
+	.image-gallery .img-slide {
+		width: 33%;
+		padding: 40px;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	.col-footer {
+		
+		width: 15%;
+		box-sizing: border-box;
+		margin: 0 1%;
+		padding: 0px;
+		float: right;
+	}
+	a:link, a:visited {
+	background-color: #6dcff6;
+	color: black;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	}
+	a:hover, a:active {
+	background-color: #00b8bb
+	}
+
+
+@media only screen and (max-width: 768px) {
+	footer {
+		background: #7cc576;
+	}
+
+}
