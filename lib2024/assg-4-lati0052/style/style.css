@@ -233,22 +233,11 @@ footer {
 		padding: 0px;
 		float: right;
 	}
-	a:link, a:visited {
-	background-color: #6dcff6;
-	color: black;
-	padding: 14px 25px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	}
-	a:hover, a:active {
-	background-color: #00b8bb
-	}
-
-
-@media only screen and (max-width: 768px) {
 	footer {
-		background: #7cc576;
+		background-color: #7cc576;
+		text-align: center;
+		padding: 10px
 	}
 
+@media only screen and (max-width: 768px) {	
 }
