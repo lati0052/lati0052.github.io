@@ -1,8 +1,3 @@
- /*http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -23,14 +18,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	max-width: 960px;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
 	line-height: 1;
-	background-image: url(pictures/back.jpg);
+	background-image: url(../pictures/back.jpg);
 }
 ol, ul {
 	list-style: none;
@@ -65,14 +60,20 @@ header {
 	padding: 20px
 	text-align: center;
 }
-header h1 {
+/*header h1 {
 	margin: 0
-}
+}*/
 html, body{
 	margin: 0;
 	padding: 0;
 }
-a:link, a:visited {
+
+.title {
+	padding-top: 5px;
+	float: right;
+}
+
+.desktop-nav a:link, .desktop-nav a:visited {
 	background-color: #6dcff6;
 	color: black;
 	padding: 14px 25px;
@@ -81,23 +82,17 @@ a:link, a:visited {
 	display: inline-block;
 	border-radius: 5px
 }
-a:hover, a:active {
+.desktop-nav a:hover, .desktop-nav a:active {
 	background-color: #00b8bb
-title {
-	padding-top: 10px;
 }
 .desktop-nav {
 	float: none;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	/*max width is used in fluid layout to restrict the width of elements that are set to 100% width*/
-	/*This is to make sure the content remains in the readable area for screen sizes that are larger than a tablet*/
 	clear: both;
 }
-
-
-.main-nav a {
+/*.main-nav a {
 	float:none;
 	box-sizing: border-box;
 	display: flex;
@@ -105,7 +100,7 @@ title {
 	width: 100%;
 	padding: 10px;
 	clear: both;
-}
+}*/
 
 .mobile-nav {
 	display: flex;
@@ -123,26 +118,27 @@ title {
 
 
 /*main content styles*/
+.site-content {
+	
+	padding: 15px;
+	width:100%;
+	box-sizing: border-box;
+}
+
 .site-sidebar {
 	padding: 15px;
-	width: 30%;
+	width: 100%;
 	box-sizing: border-box;
 }
-
-.site-content {
-	padding: 15px;
-	width:70%;
-	box-sizing: border-box;
-}
-
-
 /*footer styles*/
 footer {
 	background: #7cc576;
-	padding: 20px
-	text-align: center;
-
-social-media {
+	padding: 35px
+	width: 100%;
+	box-sizing: border-box;
+	/*text-align: center;*/
+}
+.social-media {
 	background: #7cc576;
 }
 
@@ -191,6 +187,13 @@ social-media {
 		padding: 10px;
 		box-sizing: border-box;
 		float: left;
+	}
+	.col-footer {
+		
+		width: 15%;
+		box-sizing: border-box;
+		padding: 0px;
+		float: right;
 	}
 
 @media only screen and (max-width: 768px) {	
