@@ -1,0 +1,75 @@
+1) What are the three components of Web?
+	Header, body and a footer
+
+2) Define version control and give one example.
+	Version control is a type of process that is designed to keep track of multiple reitorations of files in a repository. An example would be GitHub
+
+3) What tag is used to create the title of a web page? Give an example.
+	<TITLE>This is a title</TITLE>
+
+4) What tag is used to create a paragraph in html? Give an example.
+	<p>This is a Paragraph</p>
+
+5) Identify the odd one from these tags: <span>, <p>, <a>, <i>  and state the reason?
+	The odd one is the <a> tag.
+
+6) What are the tags required to create a navigation list in HTML? 
+<nav>, <ul>, <li>	
+
+7) What element is used to create images? Name its attributes.  
+<img src="img/fake.jpg" alt="Image" width="300"  height="200">
+
+8) Identify the odd one from these tags: <table>, <tr>, <b>, <td>  and state the reason
+	The odd one is the <b> tag.
+
+9) Give an example of color picker input. 
+	<input type="color" id="pickcolor" name="anycolor" value="#ff0000">
+
+10) What is the use of name and value attributes? Give two examples 
+	Names are used to identify the element and value is used the specify the initial value of the element.
+	ex. 1: <input type="email" name="email" id="email" value="example@g.com" readonly>
+	ex. 2: 	<textarea name="summary" id="summary" placeholder="Enter summary here">
+
+11) Give an example of inline style. 
+	<h1 style="color: blue">Test Heading</h1>
+
+12) How would you link an external style sheet? Give example. 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+13) Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px. 
+	span {
+		display: inline-block;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		margin: auto;
+		width: 50%;
+		padding: 10px;
+	}
+
+14) Create CSS keyframes block called "spin" that rotates an element. 
+	@keyframes spin {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+15) Create CSS animation block to rotate an element that has the following properties :
+class "rotate-me" It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"
+	rotate-me {
+				animation: 
+				spin 0.5s linear infinite,
+				rotate 5s;
+	}
+	<div class="rotate-me"></div>
+
+16) How would you include create an alert with string "I love JavaScript" using JavaScript?
+	<button onclick="qafunction()">Eat Me</button>
+ 	<script type="text/javascript">
+ 		function qafunction() {
+ 			alert("I love JavaScript")
+ 		}
+ 	</script>
