@@ -11,16 +11,16 @@
 	<p>This is a Paragraph</p>
 
 5) Identify the odd one from these tags: <span>, <p>, <a>, <i>  and state the reason?
-	The odd one is the <a> tag.
+	The odd one is the <a> tag. The <a> tag is used to link links, the others are used when making a paragraph.
 
 6) What are the tags required to create a navigation list in HTML? 
-<nav>, <ul>, <li>	
+	<nav>, <ul>, <li>	
 
 7) What element is used to create images? Name its attributes.  
 <img src="img/fake.jpg" alt="Image" width="300"  height="200">
 
 8) Identify the odd one from these tags: <table>, <tr>, <b>, <td>  and state the reason
-	The odd one is the <b> tag.
+	The odd one is the <b> tag. All the other tags are the components of making a table.
 
 9) Give an example of color picker input. 
 	<input type="color" id="pickcolor" name="anycolor" value="#ff0000">
