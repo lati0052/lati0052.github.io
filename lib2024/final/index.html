@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
-	<title>Final</title>
+	<title>Final(ly)</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 	<!-- Header start -->
 	<header class="site-header clearfix" id="site-header">
-		<div class="logo">Logo</div>
+		<div class="logo">
+			<img src="pictures/logo.jpg" alt="my-logo" style="width: 30%;height: 200;">
+		</div>
 
 		<!-- Navigation Menu -->
 		<nav class="main-nav-container desktop-nav">
 			<ul class="main-nav clearfix">
 				<li>
-					<a href="contact-us.html">Contact Us</a>
+					<a href="home.html">HOME</a>
 				</li>
 				<li>
-					<a href="about-us.html">About Us</a>
-					<ul class="sub-nav">
-						<li>
-							<a href="team.html">Team</a>
-						</li>
-						<li>
-							<a href="history.html">History</a>
-						</li>
-					</ul>
+					<a href="about.html">ABOUT</a>
 				</li>
 				<li>
-					<a href="images.html">Images</a>
+					<a href="schedule.html">SCHEDULE</a>
 				</li>
 				<li>
-					<a href="final.html">Images</a>
+					<a href="portfolio.html">PORTFOLIO</a>
+				</li>
+				<li>
+					<a href="contact.html">CONTACT</a>
 				</li>
 			</ul>
 		</nav>
@@ -64,53 +61,148 @@
 		<article class="col-main site-content">
 			<!-- main content start -->
 			<section class="main-content">
-				<h1>About</h1>
+				<h1>ABOUT</h1>
 				<p>Hey Guys, I'm Karlie Kloss and I just created my own website with Wix. You can do it yourself and it looks stunning. Go to wix.com. Choose a template you love. Drag-and-drop anything into place. Change the text, to make it yours and show what you do by adding your own images. With a beautiful gallery you can showcase you favourite moments and thshare them with the world. Easily play and move things around. Add your own videos to bring your site to life and connect your socail channels in a click. You'll feel confident your website will stunning on every device. With Wix you can create your own beautiful website. Go to wix.com to create your stunning website today.</p>
 				<br>
 				<p>Hey Guys, I'm Karlie Kloss and I just created my own website with Wix. You can do it yourself and it looks stunning. Go to wix.com. Choose a template you love. Drag-and-drop anything into place. Change the text, to make it yours and show what you do by adding your own images. With a beautiful gallery you can showcase you favourite moments and thshare them with the world. Easily play and move things around. Add your own videos to bring your site to life and connect your socail channels in a click. You'll feel confident your website will stunning on every device. With Wix you can create your own beautiful website. Go to wix.com to create your stunning website today.</p>
 			</section>
-
+			<br>
 			<!-- Schedule begins -->
 
-			<section>
-				<div class="overlay-container loader-container">
-					<div class="loader"></div>
-				</div>
-
-				<h1>Schedule</h1>
-
-				<button id="loadTable">Load Table</button>
-				<div id="schedule_table">
-				</div>
-			</section>
+		<section id="colour-section" class="table-section">
+			<h1>SCHEDULE</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>
+							<font color="#74a9b5">TIME</font>
+						</th>
+						<th>
+							<font color="#74a9b5">MONDAY</font>
+						</th>
+						<th>
+							<font color="#74a9b5">TUESDAY</font>
+							</th>
+						<th>
+							<font color="#74a9b5">WEDNESDAY</font>
+							</th>
+						<th>
+							<font color="#74a9b5">THURSDAY</font>
+							</th>
+						<th>
+							<font color="#74a9b5">FRIDAY</font>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+                        <tr>
+                            <td>09:00 - 11:00</td>
+                            <td>Communications 1</td>
+                            <td>Client Services</td>
+                            <td>Special Collections</td>
+                            <td>Directed Research Seminar</td>
+                            <td>Client Services</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 12:30</td>
+                            <td>Reference</td>
+                            <td>Internet App</td>
+                            <td>Library Software</td>
+                            <td>French</td>
+                            <td>Reference</td>   
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:00</td>
+                            <td>Acquisitions</td>
+                            <td>General Elective</td>
+                            <td>Marketing</td>
+                            <td>Emerging Library Tech</td>
+                            <td>Library Software</td>
+                        </tr>
+                         <tr>
+                            <td>15:30 - 17:30</td>
+                            <td>French</td>
+                            <td>French</td>
+                            <td>Acquisitions</td>
+                            <td>Subject Analysis</td>
+                            <td>Internet</td>
+                        </tr>
+                    </tbody>
+                </table>
+				</tbody>
+			</table>
+		</section>
 			<!-- Schedule Ends -->
-
+			<br>
 			<!-- Profile Begins -->
 			<section class="form-value-transfer clearfix">
-				<h1>Edit Profile</h1>
+				<h1>EDIT PROFILE</h1>
 				<form id="form" action="submit.php" method="post">
 					<p>
-						<label>Name</label>
+						<label>Name:</label>
 						<input type="text" name="name" id="name">
 					</p>
+					
 					<p>
-						<label>Postal Code</label>
-						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
-					</p>
-
-					<p>
-						<label>Email</label>
+						<label>Email:</label>
 						<input type="email" required name="email" id="email">
 					</p>
 
-					<button type="submit">Submit</button>
+					<p>
+						<label>Address</label>
+						 <input type="text" name="address" id="address">
+					</p>
+
+					<p>
+						<label>City</label>
+						<input type="text" name="city" id="city">
+					</p>
+
+					<p>
+						<label>Province</label>	
+						<select id="province" name="country">
+							<option value="prov">Select Province</option>
+							<option value="ab">Alberta</option>
+							<option value="bc">British Columbia</option>
+							<option value="ma">Manitoba</option>
+							<option value="nb">New Brunswick</option>
+							<option value="nl">Newfoundland and Labrador</option>
+							<option value="ns">Nova Scotia</option>
+							<option value="on">Ontario</option>
+							<option value="pei">Prince Edward Island</option>
+							<option value="qc">Quebec</option>
+							<option value="sk">Saskatchewan</option>
+						</select>
+					</p>
+
+					<p>
+						<label>Postal Code:</label>
+						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
+					</p>
+
+					<button type="submit">SUBMIT</button>
 				</form>
 
+				<h1>PROFILE INFO</h1>
 				<div id="results">
-					<h2>Show values</h2>
-					<p >Name: <span id="name_result"></span></p>
-					<p >Postal Code: <span id="pc_result"></span></p>
-					<p >Email: <a href="#" id="email_result"></a></p>
+
+					<img src="pictures/head.jpg" alt="head">
+					<p>
+						<span id="name_result"></span>
+					</p>
+
+					<p> 
+						<a href="#" id="email_result"></a>
+					</p>
+
+					<p> 
+						<span id="address_result"></span>, <span id="city_result"></span>
+					</p>
+
+					<p>	
+						<span id="province_result"></span>, <span id="pc_result"></span>
+					</p>
+					<img src="pictures/mail.jpg" alt="mail">
 				</div>
 			</section>
 			<!-- Profile Ends -->
